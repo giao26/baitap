@@ -123,6 +123,7 @@
 
 .about {
   padding: 70px 0;
+  scroll-margin: 100px;
 }
 
 .about .content h2 {
@@ -150,6 +151,7 @@
   background-size: cover;
   background-position: center center;
   padding: 100px 0;
+  scroll-margin: 150px;
 }
 
 .work-process .title h2 {
@@ -223,6 +225,7 @@
 
 .testimonials {
   padding: 100px 0;
+  scroll-margin: 130px;
 }
 
 .testimonials .content h2 {
@@ -284,6 +287,7 @@
   background: #f2f2fe;
   padding-top: 90px;
   padding-bottom: 60px;
+  scroll-margin: 130px;
 }
 
 .pri-table .content h2 {
@@ -431,6 +435,7 @@
 .blog {
   padding-top: 100px;
   padding-bottom: 80px;
+  scroll-margin: 130px;
 }
 
 .blog .content p {
