@@ -373,36 +373,50 @@
 
 .fun-fac {
   background: url(../images/fun-facts-bg.png);
-  background-repeat: no-repeat;
-  height: 340px;
-  width: 100%;
   background-size: cover;
+  overflow: hidden;
   background-position: center center;
+  object-fit: cover;
+}
+.fun-fac .item {
+  height: 340px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
-}
-
-.fun-fac .item {
-  color: #fff;
+  flex-direction: column;
+  transition: all 0.3s;
   position: relative;
-  padding: 40px;
+  color: #fff;
 }
 
-.fun-fac .item::after {
+.fun-fac .item .content {
+  transition: all 0.3s;
+}
+
+.fun-fac .odd::before {
   content: "";
   background: url(../images/circle-dec.png);
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  width: 179px;
+  height: 32px;
   background-repeat: no-repeat;
-  top: 63px;
-  left: 234px;
+  position: absolute;
+  top: 45%;
+  right: -61%;
 }
 
-.fun-fac .last .item::after {
-  display: none;
+.fun-fac .even::before {
+  content: "";
+  background: url(../images/circle-dec.png);
+  width: 179px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45%;
+  right: -61%;
+}
+
+.fun-fac .item:hover .content {
+  margin-top: -15px;
 }
 
 .fun-fac .item strong {
@@ -412,7 +426,6 @@
 .fun-fac .item p {
   font-size: 17px;
   margin: 0;
-  margin-top: 10px;
 }
 
 .blog {
@@ -587,7 +600,16 @@
     margin-top: 30px;
   }
 
-  .fun-fac .item::after {
+  .fun-fac .item::before {
     display: none;
   }
+}
+
+@media (max-width: 767.98px) {
+  .fun-fac .item {
+    height: 180px;
+  }
+}
+
+@media (max-width: 575.98px) {
 }
