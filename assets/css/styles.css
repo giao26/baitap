@@ -87,6 +87,7 @@
   padding: 30px;
   border-radius: 13px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .home-2 .box:hover .inner-feature {
