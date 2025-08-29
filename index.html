@@ -19,6 +19,10 @@
     />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -66,7 +70,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4 p-3 text-center col-lg-4 col-md-6 col-sm-6">
-            <div class="box">
+            <div class="box wow animate__animated animate__fadeInUp">
               <div class="inner-feature">
                 <img src="assets/images/featured-item-01.png" alt="" />
               </div>
@@ -79,7 +83,7 @@
             </div>
           </div>
           <div class="col-xl-4 p-3 text-center col-lg-4 col-md-6 col-sm-6">
-            <div class="box">
+            <div class="box wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
               <div class="inner-feature">
                 <img src="assets/images/featured-item-01.png" alt="" />
               </div>
@@ -92,7 +96,7 @@
             </div>
           </div>
           <div class="col-xl-4 p-3 text-center col-lg-4 col-md-6 col-sm-6">
-            <div class="box">
+            <div class="box wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
               <div class="inner-feature">
                 <img src="assets/images/featured-item-01.png" alt="" />
               </div>
@@ -112,7 +116,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6 text-center col-lg-6 col-md-12">
-            <img src="assets/images/left-image.png" alt="" />
+            <img class="wow animate__animated animate__fadeInLeft" src="assets/images/left-image.png" alt="" />
           </div>
           <div class="col-xl-6 align-self-center col-lg-6 col-md-12">
             <div class="content">
@@ -143,7 +147,7 @@
             </div>
           </div>
           <div class="col-xl-6 text-center col-lg-6 col-md-12">
-            <img src="assets/images/right-image.png" alt="" />
+            <img class="wow animate__animated animate__fadeInRight" src="assets/images/right-image.png" alt="" />
           </div>
         </div>
       </div>
@@ -274,7 +278,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 p-3 text-center">
-            <div class="box starter">
+            <div class="box starter wow animate__animated animate__fadeInUp">
               <h3 class="title">Starter</h3>
               <div class="price">
                 <h2>$ 14.50</h2>
@@ -293,7 +297,7 @@
           </div>
 
           <div class="col-xl-4 col-lg-4 col-md-6 p-3 text-center">
-            <div class="box premium">
+            <div class="box premium wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
               <h3 class="title">Premium</h3>
               <div class="price">
                 <h2>$ 21.50</h2>
@@ -312,7 +316,7 @@
           </div>
 
           <div class="col-xl-4 col-lg-4 col-md-6 p-3 text-center">
-            <div class="box advanced">
+            <div class="box advanced wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
               <h3 class="title">Advanced</h3>
               <div class="price">
                 <h2>$ 42.00</h2>
@@ -526,5 +530,9 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
